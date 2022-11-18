@@ -1,4 +1,4 @@
-import Energy from '../IEnergy';
+import Energy from '../Energy';
 
 interface Fighter {
   lifePoints: number;

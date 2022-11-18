@@ -1,10 +1,10 @@
-import Archetypes from './Archetypes';
-import { EnergyType } from '../IEnergy';
+import { EnergyType } from '../Energy';
+import Archetype from './Archetypes';
 
-class Mage extends Archetypes {
-  private _energy: string;
-  static instances = 0;
-
+class Mage extends Archetype {
+  private _energy: EnergyType;
+  private static instances = 0;
+  
   constructor(_name: string) {
     super(_name);
     this._energy = 'mana';
@@ -15,7 +15,7 @@ class Mage extends Archetypes {
     return Mage.instances;
   }
   
-  get energyType(): EnergyType {
+  public get energyType(): EnergyType {
     return this._energy;
   }
 }
