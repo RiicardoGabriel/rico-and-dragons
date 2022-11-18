@@ -1,5 +1,5 @@
 import Archetypes from './Archetypes';
-import { EnergyType } from '../Energy';
+import { EnergyType } from '../IEnergy';
 
 class Ranger extends Archetypes {
   private _energy: string;

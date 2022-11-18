@@ -1,5 +1,5 @@
 import Archetypes from './Archetypes';
-import { EnergyType } from '../Energy';
+import { EnergyType } from '../IEnergy';
 
 class Warrior extends Archetypes {
   private _energy: string;
